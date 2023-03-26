@@ -1,0 +1,16 @@
+<div *ngIf="album">
+  <h2>Album Details</h2>
+  <h3>{{ album.id }}</h3>
+  <h4>{{ album.title}}</h4>
+</div>
+<fieldset>
+  <input type="text"><br/>
+  <button>Save</button>
+</fieldset>
+<button><a
+  [routerLink]="['/albums', album.id, 'photos']">
+  Photos
+</a></button>
+<button>Return back</button>
+
+
